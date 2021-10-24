@@ -41,7 +41,7 @@ int	second_cmd(int fd1[2], char *fileName)
 {
 	int	fd;
 
-	fd = open(fileName, O_CREAT | O_TRUNC | O_RDWR, 0644);
+	fd = open(fileName, O_CREAT | O_APPEND| O_RDWR, 0644);
 	if (fd == -1)
 	{
 		ft_putstr_fd("wsh: ", 0);
